@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Address Book App</title>
+</head>
+
+<body>
+    <!-- UC1 AddressBook Form UI-->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/logo.jpg">
+            <div>
+                <span class="add-text">ADDRESS</span><br>
+                <span class="add-text add-book">BOOK</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="form-content">
+
+        <!-- UC2 Add form header -->
+        <form class="form">
+            <div class="form-head">
+                <div class="form-heading">PERSON ADDRESS FORM</div>
+                <div class="cancel-button">
+                    &times
+                </div>
+            </div>
+
+            <!-- UC3 Form input field -->
+            <div class="form-start">
+                <div class="row-content">
+                    <label class="label text" for="name">Full Name</label><br>
+                    <input class="input" type="text" id="name" name="name" placeholder="Enter your name... " required>
+                    <error-output class="text-error"></error-output>
+                </div>
+                <div class="row-content">
+                    <label class="label text" for="phone">Phone Number</label><br>
+                    <input class="input" type="tel " id="phone " name="phone" placeholder="Enter your phone number..."
+                        required>
+                    <error-output class="phone-error"></error-output>
+                </div>
+                <div class="row-content">
+                    <label class="label text" for="address">Address</label><br>
+                    <textarea id="address" class="input" name="address" placeholder="Enter your address... "
+                        style="height: 100px; "></textarea>
+                </div>
+                <div class="column-content">
+                    <div>
+                        <label class="label text" for="city">City</label><br>
+                        <select id="city" name="city">
+                            <option aria-placeholder="Select City">Select City</option>
+                            <option value="1">Pune</option>
+                            <option value="2">Hyderabad</option>
+                            <option value="3">Mumbai</option>
+                            <option value="4">Banglore</option>
+                            <option value="5">Delhi</option>
+                            <option value="6">Kochi</option>
+                            <option value="7">Vijayawada</option>
+                            <option value="8">Kolkata</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label text" for="state">State</label><br>
+                        <select id="state" name="state ">
+                            <option value="">Select State</option>
+
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label text zip-text" for="zipcode ">Zipcode</label></br>
+                        <input class="input" id="zipcode " name="zipcode"></input>
+                    </div>
+                </div>
+
+                <div class="buttonParent">
+                    <div class="">
+                        <button type="submit" class="button addButton" id="addButton">Add</button>
+                        <button type="reset" class="resetButton button">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
